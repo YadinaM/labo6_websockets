@@ -11,8 +11,8 @@ module.exports.go = (server) => {
             console.log("data 🔥", data);
 
             //send data back to all clients
-            //primus.write(data); //all
-            spark.write(data); // 1
+            primus.write(data); //all
+            //spark.write(data); // 1
         })
     })
 }
